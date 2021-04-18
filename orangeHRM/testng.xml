@@ -1,0 +1,22 @@
+<suite name="OrangeHRMAutomation">
+
+	<listeners>
+		<listener class-name = "orangeHRM.ListenerClass" />
+		<!-- <listener class-name = "orangeHRM.ReporterClass" /> -->
+	</listeners>
+
+	<test name="OrangeHRMLogin">
+		<classes>
+			<class name="orangeHRM.Setup" />	
+		</classes>
+	</test>
+	
+	<test name="UserManagement">
+		<classes>
+			<class name ="userManagement.Login" />
+			<class name = "userManagement.SearchUser" />
+			<class name = "userManagement.EditUser" />
+		</classes>
+	</test>
+	
+</suite>
